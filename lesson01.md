@@ -102,7 +102,7 @@ $ ./bin/tidb-server --store=tikv --path=127.0.0.1:2379
 ```
 
 ## 4. 测试结果
-- 通过 mysql客户端 连接 tidb: `mysql -h127.0.0.1 -P 4000 -uroot -proot。
+- 通过 mysql客户端 连接 tidb: `mysql -h 127.0.0.1 -P 4000 -uroot -proot`。
 - 执行 `BEGIN` 发现 "hello transaction" 有正常输出。
 > 运行发现每几秒有自动打印打多个 "hello transaction"，猜测是 tidb 内部sql导致。
 
