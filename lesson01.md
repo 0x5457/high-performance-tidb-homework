@@ -97,7 +97,7 @@ $ ./target/debug/tikv-server --pd="127.0.0.1:2379"
 
 ### tidb
 ``` shell
-$ cd pd
+$ cd tidb
 $ ./bin/tidb-server --store=tikv --path=127.0.0.1:2379
 ```
 
