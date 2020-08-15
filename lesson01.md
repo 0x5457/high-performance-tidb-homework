@@ -35,7 +35,8 @@ func (s *tikvStore) BeginWithStartTS(startTS uint64) (kv.Transaction, error) {
  ### 修改后：
  ```go
  func (s *tikvStore) Begin() (kv.Transaction, error) {
-  logutil.BgLogger().Info("hello transaction")
+	// 添加日志输出
+	logutil.BgLogger().Info("hello transaction")
 	txn, err := newTiKVTxn(s)
 	if err != nil {
 		return nil, errors.Trace(err)
@@ -45,6 +46,7 @@ func (s *tikvStore) BeginWithStartTS(startTS uint64) (kv.Transaction, error) {
 
 // BeginWithStartTS begins a transaction with startTS.
 func (s *tikvStore) BeginWithStartTS(startTS uint64) (kv.Transaction, error) {
+	// 添加日志输出
 	logutil.BgLogger().Info("hello transaction")
 	txn, err := newTikvTxnWithStartTS(s, startTS, s.nextReplicaReadSeed())
 	if err != nil {
