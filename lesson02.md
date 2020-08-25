@@ -134,17 +134,17 @@ listen tidb-cluster                        # 配置 database 负载均衡。
 $ haproxy -f /etc/haproxy/haproxy.cfg
 ```
 
-<center>haproxy admin</center>
+haproxy admin
 
 ![proxy](./asserts/lesson02/haproxy.png)
 
 
-<center>grafana</center>
+grafana
 
 ![proxy](./asserts/lesson02/grafana.png)
 
 
-<center>dashboard</center>
+dashboard
 
 ![proxy](./asserts/lesson02/dashboard.png)
 
@@ -231,15 +231,15 @@ Threads fairness:
     events (avg/stddev):           233897.4297/100182.89
     execution time (avg/stddev):   599.8446/0.11
 ```
-<center>oltp_point_select 运行时机器负载</center>
+oltp_point_select 运行时机器负载
 
 ![1_point_select_dashboard](./asserts/lesson02/1_point_select_dashboard.png)
 
-<center>oltp_point_select tidb 指标</center>
+oltp_point_select tidb 指标
 
 ![1_point_select_grafana_tidb](./asserts/lesson02/1_point_select_grafana_tidb.png)
 
-<center>oltp_point_select tikv 指标</center>
+oltp_point_select tikv 指标
 
 ![1_point_select_grafana_tikv](./asserts/lesson02/1_point_select_grafana_tikv.png)
 
@@ -290,11 +290,11 @@ Threads fairness:
     events (avg/stddev):           24425.9141/283.17
     execution time (avg/stddev):   600.0137/0.02
 ```
-<center>oltp_update_index tidb 指标</center>
+oltp_update_index tidb 指标
 
 ![1_update_index_grafana_tidb](./asserts/lesson02/1_update_index_grafana_tidb.png)
 
-<center>oltp_update_index tikv 指标</center>
+oltp_update_index tikv 指标
 
 ![1_update_index_grafana_tikv](./asserts/lesson02/1_update_index_grafana_tikv.png)
 
@@ -347,11 +347,11 @@ Threads fairness:
     execution time (avg/stddev):   600.0572/0.05
 ```
 
-<center>oltp_read_only tidb 指标</center>
+oltp_read_only tidb 指标
 
 ![1_read_only_grafana_tidb](./asserts/lesson02/1_read_only_grafana_tidb.png)
 
-<center>oltp_read_only tikv 指标</center>
+oltp_read_only tikv 指标
 
 ![1_read_only_grafana_tikv](./asserts/lesson02/1_read_only_grafana_tikv.png)
 
@@ -368,11 +368,11 @@ $ nohup ./bin/go-ycsb load mysql -P workloads/workloada -p recordcount=5000000 -
 ```shell
 $ nohup ./bin/go-ycsb run mysql -P workloads/workloada -p operationcount=5000000 -p mysql.host=172.19.215.83 -p mysql.port=3390 --threads 256 2>&1  &
 ```
-<center>workloada tidb 指标</center>
+workloada tidb 指标
 
 ![1_workloada_grafana_tidb](./asserts/lesson02/1_workloada_grafana_tidb.png)
 
-<center>workloada tikv 指标</center>
+workloada tikv 指标
 
 ![1_workloada_grafana_tikv](./asserts/lesson02/1_workloada_grafana_tikv.png)
 
@@ -485,15 +485,15 @@ Threads fairness:
     execution time (avg/stddev):   599.8200/0.15
 ```
 
-<center>oltp_point_select 运行时机器负载</center>
+oltp_point_select 运行时机器负载
 
 ![2_point_select_dashboard](./asserts/lesson02/2_point_select_dashboard.png)
 
-<center>oltp_point_select tidb 指标</center>
+oltp_point_select tidb 指标
 
 ![2_point_select_grafana_tidb](./asserts/lesson02/2_point_select_grafana_tidb.png)
 
-<center>oltp_point_select tikv 指标</center>
+oltp_point_select tikv 指标
 
 ![2_point_select_grafana_tikv](./asserts/lesson02/2_point_select_grafana_tikv.png)
 
@@ -545,11 +545,11 @@ Threads fairness:
     execution time (avg/stddev):   600.0129/0.02
 ```
 
-<center>oltp_update_index tidb 指标</center>
+oltp_update_index tidb 指标
 
 ![2_update_index_grafana_tidb](./asserts/lesson02/2_update_index_grafana_tidb.png)
 
-<center>oltp_update_index tikv 指标</center>
+oltp_update_index tikv 指标
 
 ![2_update_index_grafana_tikv](./asserts/lesson02/2_update_index_grafana_tikv.png)
 
@@ -601,16 +601,16 @@ Threads fairness:
     execution time (avg/stddev):   600.0517/0.05
 ```
 
-<center>oltp_read_only 运行时机器负载</center>
+oltp_read_only 运行时机器负载
 
 ![2_point_select_dashboard](./asserts/lesson02/2_read_only_dashboard.png)
 
 
-<center>oltp_read_only tidb 指标</center>
+oltp_read_only tidb 指标
 
 ![2_read_only_grafana_tidb](./asserts/lesson02/2_read_only_grafana_tidb.png)
 
-<center>oltp_read_only tikv 指标</center>
+oltp_read_only tikv 指标
 
 ![2_read_only_grafana_tikv](./asserts/lesson02/2_read_only_grafana_tikv.png)
 
